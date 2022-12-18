@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.parent {
+  background: yellowgreen;
+  margin-left: 10%;
+  margin-top: 50px;
+  /* margin-right: 10%; */
+  width: 80%;
+  padding: 50px;
+  position: relative;
+}
+
+.block1 {
+  background: blue;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: unset;
+}
+
+.block2 {
+  background-color: salmon;
+  padding: 20px;
+  width: 100%;
+}
+.block3 {
+  background-color: red;
+  padding: 20px;
+  width: 100%;
+}
+.block4 {
+  background-color: plum;
+  padding: 20px;
+  width: 100%;
+}
+.block5 {
+  background-color: purple;
+  padding: 20px;
+  width: 100%;
+}
+
+/*
+position: fixed - пофигист, занимает позицию и не смещается ни при каких условиях(скролл и тд)
+position: relative - физик, задается позиционирование и имеет физическое и визуальное расположение(отличается расположение при top:0 и margin-top:0)
+position: absolte - прилепало к родителю(!!! у родителя relative) - задается внутри родителя
+position: sticky - перемещается внутри родителя(!) во время скрола
+position: static - деф */
